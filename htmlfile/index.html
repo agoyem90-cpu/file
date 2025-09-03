@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agoye Honey</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="shortcut icon" href="img/ChatGPT Image Aug 25, 2025, 10_05_34 PM.png" type="image/x-icon">
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+
+<style>
+  .contact-info{
+    display: flex;
+    gap: 13px;
+}
+  .bee-preloader {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    z-index: 9999;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+  }
+  .bee-preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .bee-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .bee-img {
+    width: 120px;
+    height: auto;
+    animation: pulse 1s infinite ease-in-out;
+  }
+
+  .label {
+    font: 600 14px/1.2 system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #333;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+</style>
+
+<script>
+  // Auto-hide after 3 seconds
+  window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      document.getElementById("bee-preloader")?.classList.add("hidden");
+    }, 3000);
+  });
+</script>
+
+</head>
+<body>
+<!-- Bee Image Preloader -->
+<div class="bee-preloader" id="bee-preloader" aria-busy="true">
+  <div class="bee-wrap">
+    <img src="img/chat honey.png" alt="Bee Logo" class="bee-img" />
+    <div class="label"><br>Loading...</div>
+  </div>
+</div>
+
+
+ <nav style="font-family: 'Times New Roman', Times, serif;" class="white">
+    <div class="container nav-wrapper"> 
+      <a href="#!" class="brand-logo center">  </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger" style="color: black;"><i class="fi fi-rs-burger-menu"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" style="color: black;">Home</a></li>
+        <li><a href="#" style="color: black;">Shop</a></li>
+        <li><a href="#" style="color: black;">Services</a></li>
+        <li><a href="#" style="color: black;">Book</a></li> 
+        <li><a href="#" style="color: black;">About</a></li>
+        <li><a href="#" style="color: black;"><i class="fi fi-rs-shopping-cart"></i></a></li> 
+        <li><a href="#" style="color: black;"><i class="fi fi-brands-instagram"></i></a></li>
+      </ul>
+      <ul class="center hide-on-med-and-down">
+        <li><h5 style="color: black;" class="center-align"><img src="img/chat honey.png" width="30px" alt="">Agoye honey</h5></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Shop</a></li>
+     <li><a href="#">Services</a></li>
+    <li><a href="#">Book</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+
+  <!-- slider -->
+  <div class="slider" data-aos="fade-up"
+     data-aos-duration="3000">
+    <ul class="slides" style="font-family: 'Times New Roman', Times, serif; color: #000;">
+      
+      <li>
+        
+        <img src="img/honey.png">
+        <div class="caption left-align">
+          <h3 style="color: #000; font-weight: 600;">100% Pure, Raw, <br> Local honey </h3>        
+            <button class="btn" style="background-color: black; color: white;" class="btn btn-primary"><h6 style="font-weight: 600;">Shop Bees</h6></button>
+        </div>
+      </li>
+      <li>
+        <img src="img/another honey slider 2.png">
+        <div class="caption left-align">
+          <h3 style="color: #000; font-size: 4rem;">Nysc road natural honey</h3>
+          <button class="btn" style="background-color: gold; color: black;" class="btn btn-primary"><h6 style="font-weight: 600;">Browse by Neighbourhood</h6></button>
+        </div>
+      </li>
+      <li>
+        <img src="img/Screenshot+2024-01-13+at+9.37.55+PM.png">
+        <div class="caption right-align">
+          <h3>Learn to bee <br> a beekeeper</h3>
+          <h5>Apprentice with us in 2024!</h5>
+          <button class="btn" style="background-color: gold; color: black;" class="btn btn-primary"><h6 style="font-weight: 600;">Apply Now</h6></button>
+        </div>
+      </li>
+      <li>
+        <img src="img/BEE BOOKS.png">
+        <div class="caption left-align">
+          <h3 style="color: #000;">Read about Agoye's Beekeeping <br>back-stories</h3>
+          <button class="btn" style="background-color: gold; color: black;" class="btn btn-primary"><h6 style="font-weight: 600;">Get a copy</h6></button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+<div style="background-color: black; color: white; text-align: center; margin-bottom: 9%; margin-top: 3%;" data-aos="fade-up"
+     data-aos-duration="2000">
+    <h1 class="container" style=" font-weight: 800; padding-top: 50px;" >Live bees available <br> now.</h2><br>
+        <h4 style="font-weight: 700;">Get them now!</h4>
+        <button class="btn" style="background-color: gold; color: black; height: 80px; width: 200px; text-align: center; margin-top: 82px; margin-bottom: 10%"><h5 style="font-weight: 600;">Shop Bees</h4></button>
+</div>
+
+
+<section style=" text-align: center;" data-aos="fade-up"
+     data-aos-duration="3000">
+    <h5 style="color: black; font-weight: 700;">Shop Best Sellers</h5> 
+    <span>All harvested locally in Abuja and Northeast areas </span>   
+</section>
+
+
+
+<section class="" data-aos="fade-up"
+     data-aos-duration="3000">
+    <div class="row">
+        <div class="col l4 m6 s12">
+            <div class="card" style="box-shadow: none;">
+                <div class="card-image">
+                    <img src="img/honey.png" alt="">
+                </div>
+                <div class="card-title">
+                    <a href="#"><h6 style="text-align: center; color: #000; font-weight: 400; font-size: 22px;">Wildflower Honey</h6></a>
+                        <div class="product-price center"><span style="font-size: 18px; font-weight: 450;">from $10.00</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="col l4 m6 s12">
+            <div class="card" style="box-shadow: none;">
+                <div class="card-image">
+                    <img src="img/alpha chat honey.png" alt="">
+                </div>
+                 <div class="card-title">
+                    <a href="#"><h6 style="text-align: center; color: #000; font-weight: 400; font-size: 22px;">Blueberry Honey</h6></a>
+                        <div class="product-price center"><span style="font-size: 18px; font-weight: 450;">from $12.00</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="col l4 m6 s12">
+            <div class="card" style="box-shadow: none;">
+                <div class="card-image">
+                    <img src="img/another honey slider 2.png" alt="">
+                </div>
+                <div class="card-title">
+                    <a href="#"><h6 style="text-align: center; color: #000; font-weight: 400; font-size: 22px;">Lower East Side Honey
+</h6></a>
+                        <div class="product-price center"><span style="font-size: 18px; font-weight: 450;">$25.00</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="center" data-aos="fade-up"
+     data-aos-duration="3000">
+    <button class="btn" style="background-color: black; color: white; height: 80px; width: 200px; text-align: center; margin-top: 82px; margin-bottom: 8%"><h6 style="font-weight: 600;">Shop Now</h6></button>
+
+</div>
+
+
+
+
+<section class="" data-aos="fade-up"
+     data-aos-duration="3000">
+    <h2 style="text-align: center; font-weight: 900; font-size: 40px; font-family:'Times New Roman', Times, serif">Not your average, Local honey</h2>
+    <div class="row">
+        <div class="col l4 m6 s12">
+            <div class="card" style="box-shadow: none;">
+                <div class="card-image">
+                    <img src="img/Bee_news2.webp" alt="">
+                </div>
+               <div class="card-title">
+                <h5 style="font-weight: 700; text-align: center; font-family: 'Courier New', Courier, monospace;">Extra! Extra!</h5>
+                <div class="card-content">
+                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 18px; text-align: center;">You heard it here first - Agoye's honey is 100% natural, pure, unadultrated, raw, nectar of the Gods</p>
+                </div>
+               </div>
+            </div>
+        </div>
+         <div class="col l4 m6 s12">
+            <div class="card" style="box-shadow: none;">
+                <div class="card-image">
+                    <img src="img/bee_world2.webp" alt="">
+                </div>
+               <div class="card-title">
+                <h5 style="font-weight: 700; text-align: center; font-family: 'Courier New', Courier, monospace;">Giving Back</h5>
+                <div class="card-content">
+                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 18px; text-align: center;">Each purchase supprots Bees without Borders and Abuja Beekeper's Association.</p>
+                </div>
+               </div>
+            </div>
+        </div> <div class="col l4 m6 s12">
+            <div class="card" style="box-shadow: none;">
+                <div class="card-image">
+                    <img src="img/shopping_bag3.webp" alt="">
+                </div>
+               <div class="card-title">
+                <h5 style="font-weight: 700; text-align: center; font-family: 'Courier New', Courier, monospace;">Local Business</h5>
+                <div class="card-content">
+                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 18px; text-align: center;">We  are a family of dedicated Beekeepers with the goal of bringing you onl the best and quality product.</p>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<div class="center" data-aos="fade-up"
+     data-aos-duration="3000">
+    <button class="btn" style="height: 80px; width: 400px; border: none; background-color: #000; color: white; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large; margin-bottom: 10%;"> Explore Our Products</button>
+
+</div>
+
+<footer class="page-footer" style="background-color: goldenrod;">
+  <div class="container"  data-aos="fade-up"
+     data-aos-duration="3000">
+    <div class="row">
+      <div class="col l3 m6 s12">
+        <img src="img/ChatGPT Image Aug 25, 2025, 10_05_34 PM.png" width="70px" alt=""><br>
+        <span style="color: #000;">At Agoye bees limited, we ensure our customers or consumers to achieve maximum satisfaction when buying or consuming our Products.  With integrity and exceptional service, we want you to know we appreciate you building lasting relationships and vibrant communities with us.</span><br>
+        <div class="contact-info">
+          <i style="color: #000;" class="fi fi-brands-instagram" ></i>
+          <i style="color: #000;" class="fi fi-brands-facebook"></i>
+          <i style="color: #000;" class="fi fi-brands-twitter-alt"></i>
+        </div>
+      </div>
+      
+      <div class="col l3 m6 s12">
+        <h5  style="color: #000;">Quick links</h5>
+        <ul style="font-size: 16px;">
+        <li><a href="#" style="color: #000;">T & C</a></li>
+        <li><a href="#" style="color: #000;">Privacy Policy</a></li>
+        <li><a href="#" style="color: #000;">FAQ</a></li>
+        <li><a href="#" style="color: #000;">About us</a></li>
+        <li><a href="#" style="color: #000;">Contact us</a></li>
+        </ul>
+      </div>
+       <div class="col l3 m6 s12">
+        <h5  style="color: #000;">Contact us 💬</h5>
+       <ul style="font-size: 16px;">
+        <li><p style="color: #000;">📍 No 140 panaf drive, NYSC road, kubwa, Abuja</p></li>
+        <li><p style="color: #000;">📍 No. 1, Donbosco Avenue, Kubwa Extension, Abuja.</p></li>
+        <li><p style="color: #000;">📞+23485334280</p></li>
+        <li><p style="color: #000;">📞080176231620</p></li>
+        <li><p style="color: #000;">✉️ agoyem09@gmail.com</p></li>
+       </ul>
+      </div>
+      <div class="col l3 m6 s12 ">  
+        <h5  style="color: #000;">Subscribe to our monthly services</h5>
+       <ul style="font-size: 16px;">
+        <li><p style="color: #000;">Subscribe to our monthly services to be first in line to see and buy our most Exclusive proucts every month. Every subscriber get a complimentary 🎁 1 gallon of honey on the house.</p></li>
+        <button type="submit" style="background-color: white; height: 50px; border-radius: 10px; text-align: center;">Subscribe</button>
+       </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="materialize/js/materialize.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems, {
+        indicators: true,
+        height: 400,
+        duration: 500,
+        interval: 2000
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  </script>
+</body>
+</html>
